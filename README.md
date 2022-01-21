@@ -52,4 +52,4 @@ auto_whatsapp.sendMedia(users, src)
 ___
 
 ## License
-*auto_whatsapp* is been licensed under [MIT LICENSE]()
+*auto_whatsapp* is been licensed under [MIT LICENSE](https://github.com/adil-01/auto-whatsapp/blob/main/LICENSE)
