@@ -37,8 +37,6 @@ auto_whatsapp.sendDoc(users, src)
 
 > Note that you have to provide absolute path as src argument and with double backslackes(\\) as shown in example.
 
-___
-
 ### Sending a media
 Media can be images, videos or audio which whatsapp supports.
 ```python
