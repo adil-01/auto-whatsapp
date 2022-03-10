@@ -7,11 +7,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from time import sleep
 
+WINDOWS_USERNAME = "ADIL"
 
 # Group msg
 def sendChat(numbers, msg):
     chrome_options = Options()
-    chrome_options.add_argument("user-data-dir=C:\\Users\\ADIL\\AppData\\Local\\Google\\Chrome\\UserData")
+    chrome_options.add_argument(f"user-data-dir=C:\\Users\\{{WINDOWS_USERNAME}}\\AppData\\Local\\Google\\Chrome\\UserData")
     driver = webdriver.Chrome(options=chrome_options)
     driver.get('https://web.whatsapp.com/')
     wait = WebDriverWait(driver, 300)
@@ -35,7 +36,7 @@ def sendChat(numbers, msg):
 # Send document
 def sendDoc(numbers, path):
     chrome_options = Options()
-    chrome_options.add_argument("user-data-dir=C:\\Users\\ADIL\\AppData\\Local\\Google\\Chrome\\UserData")
+    chrome_options.add_argument(f"user-data-dir=C:\\Users\\{{WINDOWS_USERNAME}}\\AppData\\Local\\Google\\Chrome\\UserData")
     driver = webdriver.Chrome(options=chrome_options)
     driver.get('https://web.whatsapp.com/')
     wait = WebDriverWait(driver, 300)
@@ -68,7 +69,7 @@ def sendDoc(numbers, path):
 # Send media
 def sendMedia(numbers, path):
     chrome_options = Options()
-    chrome_options.add_argument("user-data-dir=C:\\Users\\ADIL\\AppData\\Local\\Google\\Chrome\\UserData")
+    chrome_options.add_argument(f"user-data-dir=C:\\Users\\{{WINDOWS_USERNAME}}\\AppData\\Local\\Google\\Chrome\\UserData")
     driver = webdriver.Chrome(options=chrome_options)
     driver.get('https://web.whatsapp.com/')
     wait = WebDriverWait(driver, 300)
