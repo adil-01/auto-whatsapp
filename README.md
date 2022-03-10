@@ -1,6 +1,8 @@
 # auto_whatsapp
 Automating WhatsApp using python with custom multiple messaging options, attachment options and supporting images and video sending as well. *auto_whatsapp* also persist your login state once QR code is scanned on web whatsapp.
 
+> Note The Package is Supported On Windows and Made for Windows Operating System Only
+
 ## Setup
 ### Installation
 In the terminal type the following
@@ -12,6 +14,9 @@ pip install auto_whatsapp
 Import *auto_whatsapp* module use its ```sendChat``` function to send messages.
 ```python
 from auto_whatsapp import auto_whatsapp
+
+# add YOUR WINDOWS_USERNAME Instead of ADIL
+auto_whatsapp.WINDOWS_USERNAME = "ADIL"
 
 msg = 'This is a test message'
 users = ["user1", "user2", "+91 9876543210"]
@@ -30,6 +35,9 @@ ___
 ```python
 from auto_whatsapp import auto_whatsapp
 
+# add YOUR WINDOWS_USERNAME Instead of ADIL
+auto_whatsapp.WINDOWS_USERNAME = "ADIL"
+
 users = ["user1", "user2", "+91 9876543210"]
 src = 'C:\\Users\\Your_user\\Desktop\\dots.jpg'
 auto_whatsapp.sendDoc(users, src)
@@ -41,6 +49,9 @@ auto_whatsapp.sendDoc(users, src)
 Media can be images, videos or audio which whatsapp supports.
 ```python
 from auto_whatsapp import auto_whatsapp
+
+# add YOUR WINDOWS_USERNAME Instead of ADIL
+auto_whatsapp.WINDOWS_USERNAME = "ADIL"
 
 users = ["user1", "user2", "+91 9876543210"]
 src = 'C:\\Users\\Your_user\\Desktop\\dots.jpg'
